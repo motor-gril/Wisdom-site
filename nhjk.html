@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>能耗监控</title>
+    <link rel="stylesheet" href="./css/sytle.css">
+    <link rel="stylesheet" href="./css/nhjk.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script src="./js/echarts.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="headert">
+        <ul class="top">
+            <li class="t_li ">
+                <ol>
+                    <li>
+                        <a href="./index.html">
+                            <button>综合监控</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="current_color">能耗监控</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <button>空间环境</button>
+                        </a>
+                    </li>
+                </ol>
+            </li>
+
+
+            <li class="t_li">
+                <h2>智慧工地监控平台</h2>
+            </li>
+            <li class="t_li">
+                <ul class="t_icons">
+                    <li>
+                        <span class="zi">10时55分20秒</span>
+                        <span>2022年6月30日</span>
+                    </li>
+                    <li>
+                        <div class="t_left">
+                            <i class="iconfont icon-tianqi-qing"></i>
+                        </div>
+                        <div class="t_right">
+                            <div>25-30℃</div>
+                            <div>多云</div>
+                        </div>
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-huifu"></i>
+                        <span>恢复</span>
+
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-setting"></i>
+                        <span>配置</span>
+
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-tuichu"></i>
+                        <span>退出</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 中部区域 -->
+    <ul class="maint">
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="iconfont icon-dianbiao_shiti"></i>
+                <p>
+                    <span>2810kw/h</span>
+                    <span>本月用电</span>
+                </p>
+            </div>
+        </li>
+
+    </ul>
+
+    <!-- 底部区域 -->
+    <footer class="footert">
+        <div class="f_top">
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <!-- 杜思思 -->
+                <p class="l_m_name">今日用电概况</p>
+                <div class="l_m_allline">
+                    <div id="l_m_line"></div>
+
+                </div>
+
+            </div>
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <!-- 上面第二个格子 用电动态 -->
+                <div class="m_b_box1">今日用电动态</div>
+                <div class="m_b_box2"></div>
+            </div>
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <!-- 上面第三个格子 -->
+                <!-- 文字部分 -->
+                <div class="l_t_text m_b_box1">
+                    <p>&nbsp;今日分区耗电</p>
+                </div>
+                <!-- 内容部分 -->
+                <div class="l_t_box">
+                    <div class="l_t_box1" style="background-color: rgb(150,137,255);">
+                        <div><span>109</span>kw/h<br>A栋</div>
+                    </div>
+                    <div class="l_t_box1" style="background-color: rgb(255,138,38);">
+                        <div><span>109</span>kw/h<br>B栋</div>
+                    </div>
+                    <div class="l_t_box1" style="background-color: rgb(78,211,60);">
+                        <div><span>109</span>kw/h<br>C栋</div>
+                    </div>
+                    <div class="l_t_box1" style="background-color: rgb(221,80,80);">
+                        <div><span>109</span>kw/h<br>D栋</div>
+                    </div>
+                    <div class="l_t_box1" style="background-color: rgb(1,170,237);">
+                        <div><span>109</span>kw/h<br>E栋</div>
+                    </div>
+                    <div class="l_t_box1" style="background-color: rgb(102,72,255);">
+                        <div><span>109</span>kw/h<br>F栋</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <div class="m_b_box1">工地能耗走势(kw/h)</div>
+                <!-- 陈妍面积图 -->
+                <div class="l_a_mjt"></div>
+            </div>
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <!-- 下面第二个 -->
+                <div class="m_b_box1">用电时段统计</div>
+                <div class="m_b_boxbb"></div>
+            </div>
+            <div class="f_1 panel">
+                <div class="panel-footer"></div>
+                <p class="l_m_name">设备用电占比</p>
+                <div class="l_m_zhu">
+                    <div id="l_m_zhutu"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/nhjk.js"></script>
+</body>
+
+</html>

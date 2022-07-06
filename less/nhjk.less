@@ -1,0 +1,425 @@
+body {
+    background     : url(../img/bg.jpg) no-repeat;
+    background-size: auto;
+    padding        : .2rem;
+}
+
+canvas {
+    height: 3.3rem !important;
+}
+
+// 按钮当前颜色
+.current_color {
+    background-color: #109980 !important;
+}
+
+/* 页面头部区域 */
+ul.top {
+    width              : 100%;
+    height             : .6042rem;
+    display            : flex;
+    flex-direction     : row;
+    border-bottom      : 1px solid #0B6759;
+    // background-color: pink;
+    align-items        : flex-end;
+
+    li.t_li {
+        flex : 1;
+        color: #fff;
+
+        &:nth-child(1) {
+            ol {
+                display       : flex;
+                flex-direction: row;
+            }
+
+            ol li {
+                flex      : 1;
+                height    : .5rem;
+                text-align: center;
+
+                button {
+                    border          : none;
+                    width           : 1.2rem;
+                    height          : 0.39rem;
+                    border-radius   : .06rem;
+                    font-size       : .15rem;
+                    background-color: rgb(105, 103, 103);
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            flex      : 2;
+            text-align: center;
+            color     : #fff;
+
+            h2 {
+                font-size  : .34rem;
+                line-height: .6rem;
+                font-weight: normal;
+            }
+
+        }
+
+        &:nth-child(3) {
+            .t_icons {
+                display       : flex;
+                flex-direction: row;
+            }
+
+            .t_icons li {
+                flex: 1;
+
+
+                i {
+                    font-size: .125rem;
+                    display  : block;
+                    margin   : .0625rem;
+                }
+
+                span {
+                    font-size: .125rem;
+                }
+
+                &:nth-child(1) {
+                    flex    : 3;
+                    overflow: hidden;
+
+                    span:first-child {
+                        color    : #0D876A;
+                        font-size: .25rem;
+                    }
+
+                    span:last-child {
+                        font-size: .07rem !important;
+                        color    : #fff;
+                    }
+                }
+
+                &:nth-child(2) {
+                    flex      : 2;
+                    margin-top: .0521rem;
+
+                    div.t_left {
+                        float: left;
+
+                        i {
+                            font-size: .2083rem;
+                        }
+                    }
+
+                    div.t_right {
+                        div {
+                            font-size: .1042rem;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+// 中部区域
+.maint {
+    width          : 100%;
+    height         : 1.2rem;
+    margin-top     : .1rem;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    border         : 1px solid #0B6759;
+
+    li {
+        flex               : 1;
+        // background-color: red;
+        margin             : 0 .1042rem;
+
+        &:nth-child(1) {
+            i {
+                background-color: #9689FF;
+            }
+        }
+
+        &:nth-child(2) {
+            i {
+                background-color: #FF8A29;
+            }
+        }
+
+        &:nth-child(3) {
+            i {
+                background-color: #4ED33C;
+            }
+        }
+
+        &:nth-child(4) {
+            i {
+                background-color: #DD5050;
+            }
+        }
+
+        &:nth-child(5) {
+            i {
+                background-color: #01AAED;
+            }
+        }
+
+        &:nth-child(6) {
+            i {
+                background-color: #6245F6;
+            }
+        }
+
+        div {
+            width : 1.4rem;
+            margin: .34rem;
+
+            i {
+                float        : left;
+                font-size    : .2rem;
+                width        : .54rem;
+                height       : .54rem;
+                text-align   : center;
+                line-height  : .54rem;
+                border-radius: .0521rem;
+            }
+
+            p {
+                margin-left: .6rem;
+
+                span {
+                    font-size: .06rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+// 底部区域
+.footert {
+    height        : 6.9rem;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+
+    .f_top,
+    .f_bottom {
+        flex           : 1;
+        height         : 100%;
+        margin-top     : .1042rem;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-around;
+
+        .f_1 {
+            flex: 1;
+
+            &:nth-child(2) {
+                margin: 0 .1042rem;
+            }
+
+        }
+    }
+}
+
+// 公共面板
+.panel {
+    border  : 1px solid #109980;
+    position: relative;
+
+    &::before {
+        position   : absolute;
+        top        : 0;
+        left       : 0;
+        content    : "";
+        width      : .1rem;
+        height     : .1rem;
+        border-left: 1px solid #fff;
+        border-top : 1px solid #fff;
+    }
+
+    &::after {
+        position    : absolute;
+        top         : 0;
+        right       : 0;
+        content     : "";
+        width       : .1rem;
+        height      : .1rem;
+        border-right: 1px solid #fff;
+        border-top  : 1px solid #fff;
+    }
+
+    .panel-footer {
+        position: absolute;
+        bottom  : 0;
+        left    : 0;
+        border  : none;
+        width   : 100%;
+
+        &::before {
+            content      : "";
+            position     : absolute;
+            bottom       : 0;
+            left         : 0;
+            width        : .1rem;
+            height       : .1rem;
+            border-bottom: 1px solid #fff;
+            border-left  : 1px solid #fff;
+        }
+
+        &::after {
+            content      : "";
+            position     : absolute;
+            bottom       : 0;
+            right        : 0;
+            width        : .1rem;
+            height       : .1rem;
+            border-bottom: 1px solid #fff;
+            border-right : 1px solid #fff;
+        }
+    }
+
+}
+
+// 工地能耗走势
+.l_a_mjt {
+    width              : 6.525rem;
+    height             : 80%;
+    // background-color: #34b84a;
+}
+
+// ---------------------------------------------
+// 用电时段统计
+.m_b_box1 {
+    height     : .375rem;
+    margin-left: .1rem;
+    margin-top : .0625rem;
+    font-size  : .17rem;
+}
+
+.m_b_box2 {
+    width      : 6.25rem;
+    height     : 2.25rem;
+    margin-left: .1rem;
+}
+
+.m_b_boxb {
+    height     : .375rem;
+    margin-left: .1rem;
+    margin-top : .0625rem;
+    font-size  : .17rem;
+}
+
+.m_b_boxbb {
+    width              : 6.25rem;
+    height             : 100%;
+    margin-left        : .1rem;
+    // background-color: #01AAED;
+}
+
+// ---------------------------------------------
+// 今日用电动态
+.f_top,
+.f_bottom {
+    flex           : 1;
+    height         : 100%;
+    margin-top     : .1042rem;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+
+    .f_1 {
+        flex: 1;
+
+        //文字部分
+        .l_t_text {
+            font-size: .125rem;
+            width    : 100%;
+            display  : inline-block;
+
+        }
+
+        //内容部分
+        .l_t_box {
+            display        : flex;
+            justify-content: space-around;
+            flex-direction : row;
+            flex-wrap      : wrap;
+            text-align     : center;
+
+            >div {
+                width        : 1.8229rem;
+                height       : .5521rem;
+                border       : none, solid;
+                border-radius: .125rem;
+                margin       : .1964rem;
+
+            }
+
+            .l_t_box1>div {
+                span {
+                    font-size: .2292rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// 统一设置标题
+.f_1 {
+    overflow: hidden;
+}
+
+.m_b_box1 {
+    margin-top: .1354rem;
+
+}
+
+// 杜思思
+//可以删掉
+//杜思思柱状图
+.l_m_name {
+    margin-top : 0.1rem;
+    margin-left: .1042rem;
+}
+
+.l_m_zhu {
+    width : 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+#l_m_zhutu {
+    // margin-top : .17rem;
+    margin-left: .3rem;
+    width      : 5.995rem;
+    height     : 100%;
+    // background-color: #fff;
+}
+
+//杜思思line图
+.l_m_allline {
+    width : 100%;
+    height: 100%;
+
+    display: flex;
+
+}
+
+#l_m_line {
+    margin-top : .17rem;
+    margin-left: .3rem;
+    width      : 5.995rem;
+    height     : 2.55rem;
+
+}

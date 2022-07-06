@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧工地大屏</title>
+    <link rel="stylesheet" href="css/sytle.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script src="./js/echarts.min.js"></script>
+</head>
+<body>
+    <a class="help" href="./chat.html"></a>
+    <!-- 页面头部区域 -->
+    <div class="header">
+        <ul class="top">
+            <li class="t_li ">
+                <ol>
+                    <li>
+                        <a href="./index.html">
+                            <button class="current_color">综合监控</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./nhjk.html">
+                            <button>能耗监控</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./environment.html">
+                            <button>空间环境</button>
+                        </a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="t_li">
+                <h2>智慧工地监控平台</h2>
+            </li>
+            <li class="t_li">
+                <ul class="t_icons">
+                    <li>
+                        <span class="zi">10时55分20秒</span>
+                        <span>2022年6月30日</span>
+                    </li>
+                    <li>
+                        <div class="t_left">
+                            <i class="iconfont icon-tianqi-qing"></i>
+                        </div>
+                        <div class="t_right">
+                            <div>25-30℃</div>
+                            <div>多云</div>
+                        </div>
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-huifu"></i>
+                        <span>恢复</span>
+
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-setting"></i>
+                        <span>配置</span>
+
+                    </li>
+                    <li class="t_Cicon">
+                        <i class="iconfont icon-tuichu"></i>
+                        <span>退出</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 页面内容区域 -->
+    <div class="main">
+        <!-- 左边 -->
+        <div class="column">
+            <!-- 左第一个小格 -->
+            <div class="panel">
+
+                <div class="panel-footer">
+
+                    <!-- 文字部分 -->
+                    <div class="l_t_text">
+                        <p>工地概况</p>
+                    </div>
+                    <!-- 图标部分 -->
+                    <div class="l_t_context">
+                        <!-- 企业数量 -->
+                        <div class="l_t_number">
+                            <div>
+                                <i class="iconfont icon-yonghu" style="color: rgb(150,137,255);"></i>
+                                <p>&nbsp;企业数量<br>1920家</p>
+                            </div>
+                        </div>
+                        <!-- 入驻企业 -->
+                        <div class="l_t_company">
+                            <div>
+                                <i class="iconfont icon-01_dairuzhu" style="color: rgb(255,138,38);"></i>
+                                <p>&nbsp;入驻企业<br>&nbsp;1872家</p>
+                            </div>
+                        </div>
+                        <!-- 从业人数 -->
+                        <div class="l_t_people">
+                            <div>
+                                <i class="iconfont icon-haoyou" style="color: rgb(78,211,60);"></i>
+                                <p>&nbsp;从业人数<br>&nbsp;1872家</p>
+                            </div>
+                        </div>
+                        <!-- 占地面积 -->
+                        <div class="l_t_square">
+                            <div>
+                                <i class="iconfont icon-mianjitu" style="color: rgb(221,80,80);"></i>
+                                <p>&nbsp;占地面积<br>&nbsp;3500公顷</p>
+                            </div>
+                        </div>
+                        <!-- 建设用地 -->
+                        <div class="l_t_land">
+                            <div>
+                                <i class="iconfont icon-jianzhu" style="color: rgb(1,170,237);"></i>
+                                <p>&nbsp;建设用地<br>&nbsp;1690公顷</p>
+                            </div>
+                        </div>
+                        <!-- 建筑面积 -->
+                        <div class="l_t_build">
+                            <div>
+                                <i class="iconfont icon-icon-test" style="color: rgb(94,74,226);"></i>
+                                <p>&nbsp;建筑面积<br>&nbsp;2890公顷</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- 左第二个小格 -->
+            <div class="panel">
+
+                <div class="l_m_ss">
+                    <p>实时车位</p>
+                </div>
+
+
+                <div class="l_m_dv">
+                    <div class="l_m_top">
+                        <div>
+                            <span class="iconfont" style="color: #9689FF;font-size: .3042rem;">&#xe604;</span>
+
+                            <div>
+                                <p>车位数</p>
+                                <p>5141</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="iconfont" style="color: #FF8A26;font-size: .3042rem;">&#xe604;</span>
+                            <div>
+                                <p>道闸数</p>
+                                <p>4321</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="iconfont" style="color: #4ED33D;font-size: .3042rem">&#xe604;</span>
+                            <div>
+                                <p>车位数</p>
+                                <p>16506</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l_m_bottom">
+                        <div>
+                            <span class="iconfont" style="color:#DC5050;font-size: .3042rem;">&#xe604;</span>
+                            <div>
+                                <p>进场数</p>
+                                <p>13540</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="iconfont" style="color: #01ABF3;font-size: .3042rem;">&#xe604;</span>
+                            <div>
+                                <p>出场数</p>
+                                <p>11540</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="iconfont" style="color: #6749FF;font-size: .3042rem;">&#xe604;</span>
+                            <div>
+                                <p>场内数</p>
+                                <p>15908</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 左第三个小格 -->
+            <div class="panel">
+                <div class="panel-footer"></div>
+                <!-- 杜思思 -->
+                <div class="l_m_tubox">
+                    <br>
+                    <p>入驻企业</p>
+                    <div id="l_m_tu"></div>
+                </div>
+
+            </div>
+            <!-- 左第四个小格 -->
+            <div class="panel">
+                <div class="panel-footer">
+                    <div>
+                        <div class="zican">&nbsp; 资产统计</div>
+                        <div class="l_a_zcb">
+                            <div>
+                                <div class="l_a_zc">
+                                    <i class="iconfont icon-database-full l_a_icon1"></i>
+                                    <p class="l_a_zc1">总产值 <br>540亿 </p>
+                                </div>
+                                <div class="l_a_zc">
+                                    <i class="iconfont icon-database-full l_a_icon2"></i>
+                                    <p class="l_a_zc1">总产值 <br>540亿 </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="l_a_zc">
+                                    <i class="iconfont icon-database-full l_a_icon3"></i>
+                                    <p class="l_a_zc1">总产值 <br>540亿 </p>
+                                </div>
+                                <div class="l_a_zc">
+                                    <i class="iconfont icon-database-full l_a_icon4"></i>
+                                    <p class="l_a_zc1">总产值 <br>540亿 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 中间 -->
+        <div class="column">
+            <div class="panel">
+                <div class="panel-footer">
+
+                </div>
+                <img class="tupian" src="./img/img01.webp">
+
+            </div>
+
+            <!-- 底部中间左边小格 -->
+            <div class="panels">
+                <div class="left panel">
+                    <div class="panel-footer">
+
+                    </div>
+                    <div class="l_a_jksb"> &nbsp; 监控设备</div>
+                    <div>
+                        <img class="l_a_jk" src="./img/1.jpeg ">
+                        <img class="l_a_jk" src="./img/2.jpeg ">
+                        <img class="l_a_jk" src="./img/1.jpeg ">
+                        <img class="l_a_jk" src="./img/2.jpeg ">
+                    </div>
+                </div>
+                <!-- 底部中间右边小格 -->
+                <div class="right panel">
+                    <!-- 新闻 -->
+                    <div class="m_b_box1">安防新闻</div>
+                    <div class="m_b_box2">
+                        <ul class="m_b_ul">
+                            <marquee behavior="scroll" direction="up">
+                                <li>
+                                    <span>新闻标题</span>
+                                    <div class="m_b_sp">
+                                        <span>15:30</span>
+                                        <span>已处理</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>新闻标题</span>
+                                    <div class="m_b_sp">
+                                        <span>15:30</span>
+                                        <span>待处理</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>新闻标题</span>
+                                    <div class="m_b_sp">
+                                        <span>15:30</span>
+                                        <span>已处理</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>新闻标题</span>
+                                    <div class="m_b_sp">
+                                        <span>15:30</span>
+                                        <span>待处理</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>新闻标题</span>
+                                    <div class="m_b_sp">
+                                        <span>15:30</span>
+                                        <span>已处理</span>
+                                    </div>
+                                </li>
+                            </marquee>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="panel-footer">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 右边的四个小格 -->
+        <div class="column">
+            <div class="right panel" id="right">
+
+                <!-- 新闻 -->
+                <div class="m_b_new">滚动新闻</div>
+                <div class="m_b_box2">
+                    <ul class="m_b_ul">
+                        <marquee behavior="scroll" direction="up">
+                            <li>
+                                <span>新闻标题</span>
+                                <div class="m_b_sp">
+                                    <span>15:30</span>
+                                    <span>已处理</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>新闻标题</span>
+                                <div class="m_b_sp">
+                                    <span>15:30</span>
+                                    <span>待处理</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>新闻标题</span>
+                                <div class="m_b_sp">
+                                    <span>15:30</span>
+                                    <span>已处理</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>新闻标题</span>
+                                <div class="m_b_sp">
+                                    <span>15:30</span>
+                                    <span>待处理</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>新闻标题</span>
+                                <div class="m_b_sp">
+                                    <span>15:30</span>
+                                    <span>已处理</span>
+                                </div>
+                            </li>
+                        </marquee>
+                    </ul>
+
+
+                </div>
+
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <div class="panel-footer">
+                </div>
+
+                <div class="r_b_all">
+                    <h4>环境质量</h4>
+                    <div class="r_b_climate">
+                        <ul class="r_b_c_one">
+                            <li>
+                                <div>检测点</div>
+                                <div>温度（℃）</div>
+                                <div>PM2.5</div>
+                                <div>湿度（%）</div>
+                                <div>噪音（dB）</div>
+                                <div>风速（m/s）</div>
+
+                            </li>
+                            <li>
+                                <div>检测点3</div>
+                                <div>30</div>
+                                <div>40</div>
+                                <div>35</div>
+                                <div>90</div>
+                                <div>10</div>
+                            </li>
+                            <li>
+                                <div>检测点3</div>
+                                <div>30</div>
+                                <div>40</div>
+                                <div>35</div>
+                                <div>90</div>
+                                <div>10</div>
+                            </li>
+                            <li>
+                                <div>检测点3</div>
+                                <div>30</div>
+                                <div>40</div>
+                                <div>35</div>
+                                <div>90</div>
+                                <div>10</div>
+                            </li>
+                            <li>
+                                <div>检测点3</div>
+                                <div>30</div>
+                                <div>40</div>
+                                <div>35</div>
+                                <div>90</div>
+                                <div>10</div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="panel">
+                <div class="panel-footer"></div>
+                <!-- 陈妍右边第三个小格开始 -->
+                <div class="l_a_zxt"></div>
+            </div>
+            <div class="panel">
+                <div class="panel-footer"></div>
+                <!-- 陈妍右边第四个小格开始 -->
+                <div class="l_a_tjt"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面适配插件 -->
+    <script src="js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
