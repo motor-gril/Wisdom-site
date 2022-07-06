@@ -3,7 +3,8 @@ body {
     background-size: auto;
     padding        : .2rem;
 }
-canvas{
+
+canvas {
     height: 3.3rem !important;
 }
 
@@ -123,39 +124,58 @@ ul.top {
 }
 
 //中部区域
-.maint{
-    width: 100%;
-    background-color: #fff;
-    height: 6.1458rem;
-    display: flex;
-    flex-direction: row;
-    margin-top: .1563rem;
-        .l_t_left{
-            height: 6.1458rem;
-            width: 12.8rem;
-            margin-right: .1042rem;
-            
-        }
-    
-        .l_t_right{
-            height: 6.1458rem;
-            width: 6.1042rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-left: .05rem;
-            >div{
+.maint {
+    width              : 100%;
+    height             : 6.1458rem;
+    display            : flex;
+    flex-direction     : row;
+    margin-top         : .1563rem;
+
+    .l_t_left {
+        flex        : 2.01;
+        height      : 6.1458rem;
+        width       : 12.8rem;
+        margin-right: .1rem;
+
+    }
+
+    .l_t_right {
+        flex: 1;
+        height         : 6.1458rem;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-around;
+        // margin-left    : .05rem;
+        >div {
             flex: 1;
+            &:last-child{
+                margin-top: .05rem;
             }
         }
+    }
 
-    
-    
-    
+
+
+
 }
 
 // 底部区域
+footer {
+    height             : 3.6rem;
+    // background-color: #fff;
+    margin-top         : .1042rem;
+    display            : flex;
+    flex-direction     : row;
 
+    div {
+        flex  : 1;
+        height: 100%;
+
+        &:nth-child(2) {
+            margin: 0 .1042rem;
+        }
+    }
+}
 
 // 公共面板
 .panel {
@@ -219,4 +239,123 @@ ul.top {
 // 统一设置标题
 .f_1 {
     overflow: hidden;
+}
+
+// ---------------------------------
+// 环境质量
+@purple: #5B2D8C;
+@orange: #D0731A;
+@green : #3F8D11;
+@red   : #D04348;
+@blue  : #008DC9;
+
+.panel .r_b_all {
+    height  : 100%;
+    width   : 100%;
+    overflow: hidden;
+
+    h4 {
+        margin     : .15rem .1rem;
+        font-size  : .1rem;
+        font-weight: normal;
+    }
+
+    .r_b_climate {
+        width         : 100%;
+        height        : 100%;
+        display       : flex;
+        flex-direction: row;
+        padding       : 0 .1042rem;
+
+        .r_b_c_one {
+            width: 100%;
+            display       : flex;
+            flex-direction: column;
+
+            li {
+                flex          : 1;
+                display       : flex;
+                flex-direction: row;
+
+                div {
+                    flex     : 1;
+                    font-size: 12px;
+                }
+
+                &:first-child {
+                    line-height: .4rem;
+                    text-align : center;
+                }
+
+                &:nth-child(n+2) {
+                    div {
+                        &:nth-child(2) {
+                            color       : @purple;
+                            text-align  : center;
+                            line-height : .4rem;
+                            margin-right: .0521rem;
+                            border-top  : 1px solid @purple;
+                        }
+                    }
+                }
+
+                &:nth-child(n+2) {
+                    div {
+                        &:nth-child(3) {
+                            color       : @orange;
+                            text-align  : center;
+                            margin-right: .0521rem;
+                            line-height : .4rem;
+                            border-top  : 1px solid @orange;
+                        }
+                    }
+                }
+
+                &:nth-child(n+2) {
+                    div {
+                        &:nth-child(4) {
+                            color       : @green;
+                            text-align  : center;
+                            line-height : .4rem;
+                            margin-right: .0521rem;
+                            border-top  : 1px solid @green;
+                        }
+                    }
+                }
+
+                &:nth-child(n+2) {
+                    div {
+                        &:nth-child(5) {
+                            color       : @red;
+                            text-align  : center;
+                            margin-right: .0521rem;
+                            line-height : .4rem;
+                            border-top  : 1px solid @red;
+                        }
+                    }
+                }
+
+                &:nth-child(n+2) {
+                    div {
+                        &:nth-child(6) {
+                            color       : @blue;
+                            line-height : .4rem;
+                            text-align  : center;
+                            margin-right: .0521rem;
+                            border-top  : 1px solid @blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ---------------------------------
+// PM2.5信息(ug/m3)
+.fonts{
+    font-weight: normal;
+    margin: .1042rem 0 0 .1042rem;
 }
