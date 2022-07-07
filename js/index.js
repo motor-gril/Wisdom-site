@@ -270,21 +270,12 @@ window.addEventListener("load", function () {
 // ----jquery  ---------------------------------------------------------------------------
 (function () {
 
-    // 跑马灯效果
-    // var lis = $(".lis").children("li");
-    // var i = 0;
-    // var timer = setInterval(function () {
-    //     if (i > lis.length) {
-    //         i = 0;
-    //     } else {
-    //         i++;
-    //     }
-
-    //     // 通过li原来的值改变li的位置
-    //     var ulTop = -(lis.height())*i;
-    //     // console.log(ulTop);
-        
-    //     lis.css('top',ulTop+"px");
-    // }, 1000);
-
+    // 新闻跑马灯效果
+    $(function(){
+        $('.m_b_box2,.r_b_climate').liMarquee({
+            direction: 'up',
+            scrollamount:20
+        });
+        $('.m_b_box2,.r_b_climate').css('background','none')
+    });
 })();

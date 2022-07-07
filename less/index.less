@@ -1,10 +1,11 @@
-@media screen and (max-width:1080px){
-    html{
+@media screen and (max-width:1080px) {
+    html {
         font-size: 54px !important;
     }
 }
-@media screen and (min-width:1920px){
-    html{
+
+@media screen and (min-width:1920px) {
+    html {
         font-size: 96px !important;
     }
 }
@@ -12,17 +13,17 @@
 body {
     background     : url(../img/bg.jpg) no-repeat;
     background-size: auto;
-    padding: .2rem;
+    padding        : .2rem;
 }
 
 /* 页面头部区域 */
 ul.top {
-    width              : 100%;
-    height             : .6042rem;
-    display            : flex;
-    flex-direction     : row;
-    border-bottom      : 1px solid #0B6759;
-    align-items        : flex-end;
+    width         : 100%;
+    height        : .6042rem;
+    display       : flex;
+    flex-direction: row;
+    border-bottom : 1px solid #0B6759;
+    align-items   : flex-end;
 
     li.t_li {
         flex : 1;
@@ -192,7 +193,7 @@ ul.top {
             .l_a_jk {
                 height: 0.8rem;
                 width : 2.1rem;
-                margin: .04rem  0;
+                margin: .04rem 0;
             }
 
             .l_a_jksb {
@@ -208,7 +209,7 @@ ul.top {
             }
 
             .zican {
-                margin-top: .2rem;
+                margin-top   : .2rem;
                 margin-bottom: .1rem;
             }
 
@@ -271,17 +272,18 @@ ul.top {
 
             // 陈妍css代码开始
 
-            .l_a_zxt{
-                width: 4.8417rem;
+            .l_a_zxt {
+                width : 4.8417rem;
                 height: 2.417rem;
             }
-            .l_a_tjt{
-                width: 4.8417rem;
+
+            .l_a_tjt {
+                width : 4.8417rem;
                 height: 2.417rem;
-                // background-color: #0B6759;
             }
+
             //结束
-            
+
 
 
             &::before {
@@ -312,7 +314,7 @@ ul.top {
                 left    : 0;
                 border  : none;
                 width   : 100%;
-                height: 100%;
+                height  : 100%;
 
                 &::before {
                     content      : "";
@@ -364,23 +366,21 @@ ul.top {
 
                 // 新闻第一部分
                 .m_b_box1 {
-                    // height     : .375rem;
                     margin-left: .1rem;
-                    margin-top: 0.23rem;
+                    margin-top : 0.23rem;
                     font-size  : .125rem;
-                    // background-color: #fff;
                 }
 
                 // 新闻的第二部分
                 .m_b_box2 {
-                    height    : 1.8729rem;
-                    margin    : .15rem .1rem;
-                    font-size : .125rem;
-                    overflow  : hidden;
+                    height   : 1.8729rem;
+                    margin   : .15rem .1rem;
+                    font-size: .125rem;
+                    overflow : hidden;
 
                     li {
-                        height: .4688rem;
-                        width : 4.375rem;
+                        height     : .4688rem;
+                        width      : 4.375rem;
                         line-height: .4688rem;
 
                         span {
@@ -432,6 +432,17 @@ ul.top {
     width   : 100%;
     overflow: hidden;
 
+    .title {
+        display       : flex;
+        flex-direction: row;
+
+        div {
+            flex      : 1;
+            text-align: center;
+        }
+
+    }
+
     .r_b_climate {
         width         : 100%;
         height        : 100%;
@@ -458,8 +469,9 @@ ul.top {
                     text-align : center;
                 }
 
-                &:nth-child(n+2) {
+                &:nth-child(n+1) {
                     div {
+                        text-align: center;
                         &:nth-child(2) {
                             color       : @purple;
                             text-align  : center;
@@ -467,11 +479,7 @@ ul.top {
                             margin-right: .0521rem;
                             border-top  : 1px solid @purple;
                         }
-                    }
-                }
 
-                &:nth-child(n+2) {
-                    div {
                         &:nth-child(3) {
                             color       : @orange;
                             text-align  : center;
@@ -479,11 +487,7 @@ ul.top {
                             line-height : .4rem;
                             border-top  : 1px solid @orange;
                         }
-                    }
-                }
 
-                &:nth-child(n+2) {
-                    div {
                         &:nth-child(4) {
                             color       : @green;
                             text-align  : center;
@@ -491,11 +495,7 @@ ul.top {
                             margin-right: .0521rem;
                             border-top  : 1px solid @green;
                         }
-                    }
-                }
 
-                &:nth-child(n+2) {
-                    div {
                         &:nth-child(5) {
                             color       : @red;
                             text-align  : center;
@@ -503,11 +503,7 @@ ul.top {
                             line-height : .4rem;
                             border-top  : 1px solid @red;
                         }
-                    }
-                }
 
-                &:nth-child(n+2) {
-                    div {
                         &:nth-child(6) {
                             color       : @blue;
                             line-height : .4rem;
@@ -516,9 +512,13 @@ ul.top {
                             border-top  : 1px solid @blue;
                         }
                     }
+
                 }
+
+
             }
         }
+
     }
 }
 
@@ -568,20 +568,20 @@ ul.top {
 #right {
 
     // 新闻第一部分
-    .m_b_new{
+    .m_b_new {
         margin: .22rem 0 0 .11rem;
     }
 
     // 新闻的第二部分
     .m_b_box2 {
-        height    : 1.8729rem;
-        margin    : .15rem .1rem;
-        font-size : .125rem;
-        overflow  : hidden;
+        height   : 1.8729rem;
+        margin   : .15rem .1rem;
+        font-size: .125rem;
+        overflow : hidden;
 
         li {
-            height: .4688rem;
-            width : 4.375rem;
+            height     : .4688rem;
+            width      : 4.375rem;
             line-height: .4688rem;
 
             span {
@@ -611,38 +611,53 @@ ul.top {
 
 
 //杜思思饼状图
-.l_m_tubox{
-    width: 100%;height: 100%;
-   
+.l_m_tubox {
+    width : 100%;
+    height: 100%;
+
 }
-#l_m_tu{
-    margin-top: .17rem;
+
+#l_m_tu {
+    margin-top : .17rem;
     margin-left: .35rem;
-    width: 3.995rem; height: 1.75rem;
+    width      : 3.995rem;
+    height     : 1.75rem;
 }
 
 // 按钮当前颜色
 
-.current_color{
+.current_color {
     background-color: #109980 !important;
 }
 
 
 
 // 机器人
-.help{
-    position: fixed;
-    width: .6rem;
-    height: .6rem;
-    z-index: 100;
+.help {
+    position     : fixed;
+    width        : .6rem;
+    height       : .6rem;
+    z-index      : 100;
     border-radius: 50%;
-    top: 1rem;
-    left: 0;
-    background: url(../img/person01.png);
+    top          : 1rem;
+    left         : 0;
+    background   : url(../img/person01.png);
 }
 
 // 字体设置
 .fonts {
     font-weight: normal;
     margin     : .1042rem 0 0 .1042rem;
+}
+
+// 走马灯
+.right {
+    overflow: hidden;
+}
+
+// 设置右侧滚动新闻中每个li的宽度
+.m_b_ul{
+    li{
+        width: 100% !important;
+    }
 }
