@@ -232,14 +232,14 @@ window.addEventListener("load", function () {
             {
                 name: '入驻企业',
                 type: 'pie',
-                radius: ['10%','60%'],
+                radius: ['10%', '60%'],
                 color: ['#9689ff', '#ff8a26', '#4ed33c', '#dd5050'],
-                label: {fontSize: 13},
+                label: { fontSize: 13 },
                 data: [
-                    {value: 135, name: '有限责任公司', label: {color: "#9689ff"}},
-                    {value: 102, name: '股份有限公司', label: {color: "#ff8a26"}},
-                    {value: 78, name: '个人独资公司', label: {color: "#4ed33c"}},
-                    {value: 45, name: '合资企业', label: {color: "#dd5050"}}
+                    { value: 135, name: '有限责任公司', label: { color: "#9689ff" } },
+                    { value: 102, name: '股份有限公司', label: { color: "#ff8a26" } },
+                    { value: 78, name: '个人独资公司', label: { color: "#4ed33c" } },
+                    { value: 45, name: '合资企业', label: { color: "#dd5050" } }
                 ],
                 label: {
                     fontSize: 9,
@@ -263,4 +263,28 @@ window.addEventListener("load", function () {
     window.addEventListener("resize", function () {
         myChart.resize();
     });
+})();
+
+
+
+// ----jquery  ---------------------------------------------------------------------------
+(function () {
+
+    // 跑马灯效果
+    // var lis = $(".lis").children("li");
+    // var i = 0;
+    // var timer = setInterval(function () {
+    //     if (i > lis.length) {
+    //         i = 0;
+    //     } else {
+    //         i++;
+    //     }
+
+    //     // 通过li原来的值改变li的位置
+    //     var ulTop = -(lis.height())*i;
+    //     // console.log(ulTop);
+        
+    //     lis.css('top',ulTop+"px");
+    // }, 1000);
+
 })();
