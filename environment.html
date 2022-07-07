@@ -79,7 +79,7 @@
       <div class="f_1 panel">
         <div class="panel-footer"></div>
         <div class="r_b_all">
-          <h4>环境质量</h4>
+          <h4 class="fonts">环境质量</h4>
           <div class="r_b_climate">
             <ul class="r_b_c_one">
               <li>
@@ -142,21 +142,41 @@
 
   <!-- 底部区域 -->
   <footer>
+    <!-- 温度信息 -->
     <div class="panel">
-      <div class="panel-footer"></div>
+      <div class="panel-footer">
+
+        <div class="climate">
+          <h4 class="fonts">温度信息(℃)</h4>
+          <div class="climate_pic"></div>
+        </div>
+      </div>
+
     </div>
+    <!-- 湿度信息 -->
     <div class="panel">
-      <div class="panel-footer"></div>
+      <div class="panel-footer">
+        <div class="sd">
+          <h4 class="fonts">湿度信息(%)</h4>
+          <div class="sd_pic"></div>
+        </div>
+      </div>
     </div>
+    <!-- 风速情况 -->
     <div class="panel">
-      <div class="panel-footer"></div>
+      <div class="panel-footer">
+        <div class="fs">
+          <h4 class="fonts">风速情况(m/s)</h4>
+          <div class="fs_pic"></div>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="./js/flexible.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/echarts.min.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/nhjk.js"></script>
+  <script src="./js/environment.js"></script>
 </body>
 
 </html>

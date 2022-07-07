@@ -57,12 +57,12 @@ ul.top li.t_li:nth-child(3) .t_icons li {
   flex: 1;
 }
 ul.top li.t_li:nth-child(3) .t_icons li i {
-  font-size: 0.125rem;
+  font-size: 0.2rem;
   display: block;
-  margin: 0.0625rem;
+  margin: 0.05rem;
 }
 ul.top li.t_li:nth-child(3) .t_icons li span {
-  font-size: 0.125rem;
+  font-size: 0.2rem;
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(1) {
   flex: 3;
@@ -70,10 +70,10 @@ ul.top li.t_li:nth-child(3) .t_icons li:nth-child(1) {
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(1) span:first-child {
   color: #0D876A;
-  font-size: 0.25rem;
+  font-size: 0.3rem;
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(1) span:last-child {
-  font-size: 0.07rem !important;
+  font-size: 0.2rem !important;
   color: #fff;
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(2) {
@@ -84,10 +84,10 @@ ul.top li.t_li:nth-child(3) .t_icons li:nth-child(2) div.t_left {
   float: left;
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(2) div.t_left i {
-  font-size: 0.2083rem;
+  font-size: 0.3rem;
 }
 ul.top li.t_li:nth-child(3) .t_icons li:nth-child(2) div.t_right div {
-  font-size: 0.1042rem;
+  font-size: 0.2rem;
 }
 .maint {
   width: 100%;

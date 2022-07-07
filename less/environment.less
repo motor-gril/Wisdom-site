@@ -20,7 +20,6 @@ ul.top {
     display            : flex;
     flex-direction     : row;
     border-bottom      : 1px solid #0B6759;
-    // background-color: pink;
     align-items        : flex-end;
 
     li.t_li {
@@ -71,15 +70,14 @@ ul.top {
             .t_icons li {
                 flex: 1;
 
-
                 i {
-                    font-size: .125rem;
+                    font-size: .2rem;
                     display  : block;
-                    margin   : .0625rem;
+                    margin   : .05rem;
                 }
 
                 span {
-                    font-size: .125rem;
+                    font-size: .2rem;
                 }
 
                 &:nth-child(1) {
@@ -88,11 +86,11 @@ ul.top {
 
                     span:first-child {
                         color    : #0D876A;
-                        font-size: .25rem;
+                        font-size: .3rem;
                     }
 
                     span:last-child {
-                        font-size: .07rem !important;
+                        font-size: .2rem !important;
                         color    : #fff;
                     }
                 }
@@ -105,13 +103,13 @@ ul.top {
                         float: left;
 
                         i {
-                            font-size: .2083rem;
+                            font-size: .3rem;
                         }
                     }
 
                     div.t_right {
                         div {
-                            font-size: .1042rem;
+                            font-size: .2rem;
                         }
                     }
                 }
@@ -123,13 +121,14 @@ ul.top {
     }
 }
 
+
 //中部区域
 .maint {
-    width              : 100%;
-    height             : 6.1458rem;
-    display            : flex;
-    flex-direction     : row;
-    margin-top         : .1563rem;
+    width         : 100%;
+    height        : 6.1458rem;
+    display       : flex;
+    flex-direction: row;
+    margin-top    : .1563rem;
 
     .l_t_left {
         flex        : 2.01;
@@ -140,15 +139,17 @@ ul.top {
     }
 
     .l_t_right {
-        flex: 1;
+        flex           : 1;
         height         : 6.1458rem;
         display        : flex;
         flex-direction : column;
         justify-content: space-around;
+
         // margin-left    : .05rem;
         >div {
             flex: 1;
-            &:last-child{
+
+            &:last-child {
                 margin-top: .05rem;
             }
         }
@@ -254,12 +255,6 @@ footer {
     width   : 100%;
     overflow: hidden;
 
-    h4 {
-        margin     : .15rem .1rem;
-        font-size  : .1rem;
-        font-weight: normal;
-    }
-
     .r_b_climate {
         width         : 100%;
         height        : 100%;
@@ -268,7 +263,7 @@ footer {
         padding       : 0 .1042rem;
 
         .r_b_c_one {
-            width: 100%;
+            width         : 100%;
             display       : flex;
             flex-direction: column;
 
@@ -352,10 +347,58 @@ footer {
 }
 
 
+.fonts {
+    font-weight: normal;
+    margin     : .1042rem 0 0 .1042rem;
+}
 
 // ---------------------------------
 // PM2.5信息(ug/m3)
-.fonts{
-    font-weight: normal;
-    margin: .1042rem 0 0 .1042rem;
+
+.pm {
+    width : 100%;
+    height: 100%;
+
+    .pm_pic {
+        width              : 100%;
+        height             : 100%;
+        
+    }
+}
+
+// ---------------------------------
+// 温度信息
+.climate{
+    width: 100%;
+    height: 100%;
+    // background-color:pink;
+    .climate_pic{
+        height: 90%;
+        // background-color: #fff;
+    }
+}
+
+// ---------------------------------
+// 湿度信息
+.sd{
+    width: 100%;
+    height: 100%;
+    // background-color:pink;
+    .sd_pic{
+        height: 90%;
+        // background-color: #fff;
+    }
+}
+
+
+// ---------------------------------
+// 风速情况
+.fs{
+    width: 100%;
+    height: 100%;
+    // background-color:pink;
+    .fs_pic{
+        height: 90%;
+        // background-color: #fff;
+    }
 }
