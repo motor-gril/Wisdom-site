@@ -12,8 +12,8 @@ window.addEventListener("load", function () {
       type: 'category',
       boundaryGap: false,
       data: ['6/20', '6/21', '6/22', '6/23', '6/24', '6/25', '6/26', '6/27', '6/28', '6/29', '6/30', '6/31'],
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       }
     },
     yAxis: {
@@ -29,8 +29,8 @@ window.addEventListener("load", function () {
           color: '#6B6C70',
         }
       },
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       },
 
       /*改变y轴颜色*/
@@ -80,8 +80,8 @@ window.addEventListener("load", function () {
       type: 'category',
       boundaryGap: false,
       data: ['6/20', '6/21', '6/22', '6/23', '6/24', '6/25', '6/26', '6/27', '6/28', '6/29', '6/30', '6/31'],
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       }
     },
     yAxis: {
@@ -106,8 +106,8 @@ window.addEventListener("load", function () {
           width: 1, //这里是为了突出显示加上的  
         }
       },
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       }
     },
     series: [
@@ -156,8 +156,8 @@ window.addEventListener("load", function () {
       type: 'category',
       boundaryGap: false,
       data: ['6/20', '6/21', '6/22', '6/23', '6/24', '6/25', '6/26', '6/27', '6/28', '6/29', '6/30', '6/31'],
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       }
     },
     yAxis: {
@@ -173,8 +173,8 @@ window.addEventListener("load", function () {
           color: '#6B6C70',
         }
       },
-      axisLabel:{
-        color:"#8B8C8D"
+      axisLabel: {
+        color: "#8B8C8D"
       },
       /*改变y轴颜色*/
       axisLine: {
@@ -223,55 +223,68 @@ window.addEventListener("load", function () {
     xAxis: {
       type: 'category',
       boundaryGap: false,
-      data: ['6/20','6/21','6/22','6/23','6/24','6/25','6/26','6/27','6/28','6/29','6/30','6/31'],
-      axisLine:{
-        lineStyle:{
-          color:"#8B8C8D"
+      data: ['6/20', '6/21', '6/22', '6/23', '6/24', '6/25', '6/26', '6/27', '6/28', '6/29', '6/30', '6/31'],
+      axisLine: {
+        lineStyle: {
+          color: "#8B8C8D"
         }
       }
     },
     yAxis: {
       type: 'value',
-      scale:true,
-      max:30,
-      min:0,
+      scale: true,
+      max: 30,
+      min: 0,
       splitLine: {
+        show: true,
+        // 虚线
+        lineStyle: {
+          type: 'dashed',
+          color: '#6B6C70',
+        }
+      },
+
+      /*改变y轴颜色*/
+      axisLine: {
+        lineStyle: {
           show: true,
-          // 虚线
-          lineStyle: {
-            type: 'dashed',
-            color: '#6B6C70',
-          }
-        },
-        
-        /*改变y轴颜色*/
-        axisLine: {
-          lineStyle: {
-            show: true,
-            color: '#8B8C8D',
-            width: 1, //这里是为了突出显示加上的  
-          }
-        },
+          color: '#8B8C8D',
+          width: 1, //这里是为了突出显示加上的  
+        }
+      },
     },
     series: [
       {
-        data: [5, 7,10, 10, 15, 20, 10,20,15,5,6,10],
+        data: [5, 7, 10, 10, 15, 20, 10, 20, 15, 5, 6, 10],
         type: 'line',
-        areaStyle: {normal: {
-              color: '#453C0E' //改变区域颜色
-            }},
-            
-            itemStyle: {
-            normal: {
-              color: 'red', //改变折线点的颜色
-              lineStyle: {
-                color: '#C7CDD1' //改变折线颜色
-              }
+        areaStyle: {
+          normal: {
+            color: '#453C0E' //改变区域颜色
+          }
+        },
+
+        itemStyle: {
+          normal: {
+            color: 'red', //改变折线点的颜色
+            lineStyle: {
+              color: '#C7CDD1' //改变折线颜色
             }
-          },
+          }
+        },
       }
     ]
   };
   myChart3.setOption(option);
 
+});
+
+// 环境质量走马灯
+
+
+$(function () {
+  $('.r_b_climate').liMarquee({
+    direction: 'up',
+    scrollamount: 20
+  });
+  $('.r_b_climate').css('background', 'none');
 });
