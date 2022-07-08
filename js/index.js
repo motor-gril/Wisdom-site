@@ -281,11 +281,39 @@ window.addEventListener("load", function () {
     // 动态显示日期
     var dates = $(".date");
     var years = $(".year");
+    // 一进入页面就开始加载时间
+    getDate();
+    setInterval(getDate, 1000);
 
-    var SystemDate = new Date();
-    console.log(SystemDate);
-    
+    function getDate() {
+        var SystemDate = new Date();
+        // 日
+        var day = SystemDate.getDate();
+        day = addZero(day);
+        // 月
+        var month = (SystemDate.getMonth()) + 1;
+        month = addZero(month);
+        // 年
+        var year = SystemDate.getFullYear();
+        // 小时
+        var hour = SystemDate.getHours();
+        hour = addZero(hour);
+        // 秒
+        var second = SystemDate.getSeconds();
+        second = addZero(second);
+        // 分
+        var minute = SystemDate.getMinutes();
+        minute = addZero(minute);
+        var one = hour + "时" + minute + "分" + second + "秒";
+        var two = year + "年" + month + "月" + day + "日";
+        dates.html(one);
+        years.html(two);
+    }
 
-
-
+    function addZero(obj) {
+        if (obj < 10) {
+            obj = "0" + obj;
+        }
+        return obj;
+    }
 })();
