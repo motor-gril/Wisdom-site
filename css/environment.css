@@ -291,3 +291,77 @@ footer div:nth-child(2) {
 .fs .fs_pic {
   height: 90%;
 }
+.l_t_left {
+  display: flex;
+  flex-direction: column;
+}
+.l_t_left .m_b_top {
+  flex: 1;
+  margin-left: 3.5rem;
+}
+.l_t_left .m_b_top .m_b_big {
+  flex: 1;
+}
+.l_t_left .m_b_top .m_b_big .m_b_left {
+  height: 1.25rem;
+  width: 1.25rem;
+  flex: 1;
+  float: left;
+  margin-left: 0.3125rem;
+}
+.l_t_left .m_b_top .m_b_big .m_b_left > .iconfont {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.3125rem;
+}
+.l_t_left .m_b_top .m_b_big .m_b_left .m_b_p {
+  float: right;
+}
+.l_t_left .m_b_top .m_b_big .m_b_left .m_b_p p {
+  margin-bottom: 0.3125rem;
+}
+.l_t_left .m_b_top .m_b_big .m_b_right {
+  margin-top: 0.3125rem;
+  flex: 1;
+  display: inline-block;
+  margin-left: 0.3125rem;
+}
+.l_t_left .m_b_top .m_b_big .m_b_right p {
+  margin-bottom: 0.3125rem;
+}
+.l_t_left .m_b_bottom {
+  flex: 1;
+  display: flex;
+}
+.l_t_left .m_b_bottom .m_b_big {
+  flex: 1;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_left {
+  height: 1.25rem;
+  width: 1.25rem;
+  flex: 1;
+  float: left;
+  margin-left: 0.3125rem;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_left > .iconfont {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.3125rem;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_left .m_b_p {
+  float: right;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_left .m_b_p p {
+  margin-bottom: 0.3125rem;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_right {
+  margin-top: 0.3125rem;
+  flex: 1;
+  display: inline-block;
+  margin-left: 0.3125rem;
+}
+.l_t_left .m_b_bottom .m_b_big .m_b_right p {
+  margin-bottom: 0.3125rem;
+}
