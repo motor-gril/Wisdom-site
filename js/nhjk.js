@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
         color: 'red'
       },
       axisLabel: {
-        color: '#8B8C8D',
+        color: '#AFB5BA',
         fontSize: 10
       }
     },
@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
           show: true,
           lineStyle: {
             type: 'dashed',
-            color: '#8B8C8D',
+            color: '#AFB5BA',
           }
         },
         splitNumber: 10,
@@ -115,17 +115,17 @@ window.addEventListener("load", function () {
         show: true,
         lineStyle: {
           type: 'dashed',
-          color: '#8B8C8D',
+          color: '#AFB5BA',
         }
       },
       axisLabel: {
-        color: '#8B8C8D',
+        color: '#AFB5BA',
         fontSize: 8
       },
       /*改变y轴颜色*/
       axisLine: {
         lineStyle: {
-          color: '#8B8C8D',
+          color: '#AFB5BA',
           width: 1, //这里是为了突出显示加上的  
         }
       },
@@ -171,10 +171,10 @@ window.addEventListener("load", function () {
       boundaryGap: false,
       data: ['8:00', '10:00', '12:00', '14:00', '16:00', '18:00'],
       nameTextStyle: {
-        color: '#8B8C8D'
+        color: '#AFB5BA'
       },
       axisLabel: {
-        color: '#8B8C8D',
+        color: '#AFB5BA',
         fontSize: 10
       }
     },
@@ -253,7 +253,7 @@ window.addEventListener("load", function () {
         show: false
       },
       axisLabel: {
-        color: '#8B8C8D',
+        color: '#AFB5BA',
         fontSize: 10
 
       },
@@ -266,7 +266,7 @@ window.addEventListener("load", function () {
       axisLine: {
         show: true,
         lineStyle: {
-          color: "#8B8C8D"
+          color: "#AFB5BA"
         }
       },
       interval: 100,
@@ -316,11 +316,11 @@ window.addEventListener("load", function () {
   option = {
 
     grid: {
-      left: '2%',
-      top: '10%',
+      left: '4',
+      top: '17',
       bottom: '5%',
       containLabel: true,
-      height: 120,
+      height: 110,
       width: 350
     },
     tooltip: {
@@ -336,12 +336,12 @@ window.addEventListener("load", function () {
       axisLine: {
         show: true,
         lineStyle: {
-          color: '#8B8C8D'
+          color: '#AFB5BA'
         }
       },
       axisLabel: {
-        color: '#8B8C8D',
-        fontSize: 10
+        color: '#AFB5BA',
+        fontSize: 8
 
       },
       data: ['00:00', '01:15', '02:30', '03:45', '05:00', '06:15', '07:30', '08:45', '10:00', '11:15', '12:30', '13:45', '15:00', '16:15', '17:30', '18:45', '20:00', '21:15', '22:30', '23:45']
@@ -350,14 +350,14 @@ window.addEventListener("load", function () {
       type: 'value',
       axisLabel: {
         formatter: '{value} KW',
-        fontSize:10,
-        color: '#8B8C8D'
+        fontSize:8,
+        color: '#AFB5BA'
       },
       // 坐标轴轴线配置
       axisLine: {
         show: true,
         lineStyle: {
-          color: '#8B8C8D'
+          color: '#AFB5BA'
         }
       },
       // 坐标轴刻度配置
