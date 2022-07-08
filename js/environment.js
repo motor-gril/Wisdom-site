@@ -4,8 +4,8 @@ window.addEventListener("load", function () {
   var myChart = echarts.init(this.document.querySelector(".pm_pic"));
   var option = {
     grid: {
-      width: 330,
-      height: 100,
+      width: '88%',
+      height: '56%',
       top: 26
     },
     xAxis: {

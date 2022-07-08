@@ -243,8 +243,8 @@ window.addEventListener("load", function () {
   var myChart = echarts.init(this.document.querySelector("#l_m_zhutu"));
   var option = {
     grid: {
-      width: '320',
-      height: "180",
+      width: '85%',
+      height: "75%",
       top: 38,
       left: 40
     },
@@ -320,8 +320,8 @@ window.addEventListener("load", function () {
       top: '17',
       bottom: '5%',
       containLabel: true,
-      height: 110,
-      width: 350
+      height: '75%',
+      width: '90%'
     },
     tooltip: {
       trigger: 'axis',
