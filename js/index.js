@@ -271,11 +271,21 @@ window.addEventListener("load", function () {
 (function () {
 
     // 新闻跑马灯效果
-    $(function(){
-        $('.m_b_box2,.r_b_climate').liMarquee({
-            direction: 'up',
-            scrollamount:20
-        });
-        $('.m_b_box2,.r_b_climate').css('background','none')
+
+    $('.m_b_box2,.r_b_climate').liMarquee({
+        direction: 'up',
+        scrollamount: 20
     });
+    $('.m_b_box2,.r_b_climate').css('background', 'none')
+
+    // 动态显示日期
+    var dates = $(".date");
+    var years = $(".year");
+
+    var SystemDate = new Date();
+    console.log(SystemDate);
+    
+
+
+
 })();
